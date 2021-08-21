@@ -8,7 +8,7 @@ from discord.ext import commands
 import builtins
 from discord.ext.commands.errors import CommandNotFound
 from dislash import *
-from var import *
+from vars import *
 
 #----------------------------------------------------------------------------
 
