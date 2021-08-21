@@ -1,12 +1,11 @@
 from asyncio.windows_events import NULL
 from sys import float_info
+import discord
 from discord import colour
 from dislash import *
 from discord.ext import commands
 from discord.utils import get
-from var import *
-from wepembed import *
-from command_desc import *
+from vars.command_desc import *
 
 
 class commands(commands.Cog):

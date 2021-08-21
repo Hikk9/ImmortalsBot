@@ -2,7 +2,7 @@ from discord.ext import commands
 from asyncio.windows_events import NULL
 import discord
 from discord.ext.commands.errors import MissingAnyRole
-from var import *
+from vars.var import *
 
 
 class admin(commands.Cog):

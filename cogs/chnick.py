@@ -1,7 +1,7 @@
 from discord.ext import commands
 import discord
 from discord.ext.commands.errors import MissingAnyRole
-from var import *
+from vars import *
 class commands(commands.Cog):
     def __init__(self, bot):
         self.bot = bot

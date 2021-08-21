@@ -1,6 +1,6 @@
 import discord
-from var import *
-from wepembed import *
+from vars.var import *
+from vars.wepembed import *
 
 reset_value = f"Con questo comando comando si resettano i nickname di tutti i presenti nel server, riportandoli al loro nome usato dalla account \n esempio: \n nome account: \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b nickname nel server:\n> Hik#9778 \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b Izalith\n dopo il comando `.reset` il nick sul server diventerà: \n> Hik"
 embed_reset_info = discord.Embed(title="Commands Information", color=discord.Color.green(), inline=True)

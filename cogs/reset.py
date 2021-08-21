@@ -3,7 +3,9 @@ from asyncio.windows_events import NULL
 import asyncio
 
 from discord.ext.commands.errors import MissingAnyRole
-from var import *
+from vars.var import *
+
+
 class admin(commands.Cog):
     def __init__(self, bot):
         self.bot = bot

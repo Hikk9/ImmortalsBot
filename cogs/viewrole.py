@@ -3,7 +3,7 @@ from asyncio.windows_events import NULL
 import discord
 from discord.embeds import EmbedProxy
 from discord.ext import commands
-from var import *
+from vars.var import *
 from discord.ext.commands import MissingAnyRole
 
 class commands(commands.Cog):

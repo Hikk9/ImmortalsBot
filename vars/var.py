@@ -1,6 +1,6 @@
 import discord
 import dislash
-from wepembed import *
+from vars.wepembed import *
 from dislash import *
 
 vocal_number = 0

@@ -1,6 +1,5 @@
 import discord
 from dislash import *
-from var import *
 
 
 

@@ -6,10 +6,7 @@ from discord.ext.commands.errors import CommandNotFound
 from dislash import *
 from discord.ext import commands
 from discord.utils import get
-from command_desc import *
-from wepembed import *
-from var import *
-from var import current_line
+from vars.command_desc import *
 
 tmp = "main_info_page"
 msg = ""

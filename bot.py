@@ -39,7 +39,7 @@ async def on_ready():
 async def on_voice_state_update(member, before, after):
     if str(after.channel) == 'crea canale pvp':
         if str(after) != str(before):
-            new_channel = await after.channel.clone(name=f'canale vocale #{vocal_number}')
+            new_channel = await after.channel.clone(name=f'canale vocale di {member.name}')
             #new_channel = client.get_channel(f'canale vocale #{vocal_number}')
             print(new_channel)
             await member.move_to(new_channel)
@@ -47,7 +47,7 @@ async def on_voice_state_update(member, before, after):
     print(before)
     print(after)
     print("---------------------")
-    if str(before.channel) == f'canale vocale #{vocal_number}':
+    if str(before.channel) == f'canale vocale di {member.name}':
         if len(before.channel.members) == 0:
             print(f"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa: {before}")
             await before.channel.delete()
@@ -65,4 +65,4 @@ client.load_extension('cogs.viewrole')
 client.load_extension('cogs.fast_info')
 client.load_extension('cogs.help')
 #client.run('process.env.token')
-client.run('ODY1OTE0NjUzOTg4NDg3MTY5.YPK73Q.GugvLzwVdtEwoQouxnGF0n6dltE')
+client.run('ODY1OTE0NjUzOTg4NDg3MTY5.YPK73Q.ExeR5wsAqTlDX53WKf1jNm72BJE')
