@@ -1,0 +1,10 @@
+token: 		ODY1OTE0NjUzOTg4NDg3MTY5.YPK73Q.vjJUqH5Tx7Gp6T1ZLMzMXaaT63o
+
+
+riassunto comandi:
+.f
+.chnick
+.help
+.rank
+.reset
+.vrole
