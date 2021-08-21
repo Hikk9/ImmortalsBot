@@ -1,4 +1,5 @@
 import sys
+from discord.abc import GuildChannel
 
 from discord.channel import VoiceChannel
 sys.path.append('C:/Users/mirko/Desktop/DiscordBot/cogs/' )
@@ -47,10 +48,10 @@ async def on_voice_state_update(member, before, after):
     print(before)
     print(after)
     print("---------------------")
-    if str(before.channel) == f'canale vocale di {member.name}':
-        if len(before.channel.members) == 0:
-            print(f"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa: {before}")
-            await before.channel.delete()
+    #print(member.name in GuildChannel.guild.members)
+    if len(before.channel.members) == 0 and str(before.channel).startswith("canale vocale di"):
+        print(f"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa: {before}")
+        await before.channel.delete()
 
 '''    if len(after.channel.members) == 0:
         print(f"len2: {len(after.channel.members)}")
@@ -66,3 +67,4 @@ client.load_extension('cogs.fast_info')
 client.load_extension('cogs.help')
 #client.run('process.env.token')
 client.run('ODY1OTE0NjUzOTg4NDg3MTY5.YPK73Q.ExeR5wsAqTlDX53WKf1jNm72BJE')
+client.run('ODY1OTE0NjUzOTg4NDg3MTY5.YPK73Q.HJgMsSHqgc2kO5lSytEsEGzX5WE')
